@@ -1,4 +1,6 @@
-import React from 'react'
+export const metadata ={
+  title: 'About team'
+}
 
 const TeamPage = () => {
   return (
