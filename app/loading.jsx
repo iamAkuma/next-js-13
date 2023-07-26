@@ -2,8 +2,7 @@
 const LoadingPage = () => {
   return (
     <div className="loader">
-        <div>
-            Patience is key.
+        <div className="spinner">
         </div>      
     </div>
   )
