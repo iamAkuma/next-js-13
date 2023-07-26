@@ -6,7 +6,12 @@ async function fetchRepoContents(name){
 
 
     const response = await fetch(
-     `https://api.github.com/repos/iamAkuma/${name}/contents`
+     `https://api.github.com/repos/iamAkuma/${name}/contents`,
+     {
+        next: {
+          revalidate: 60,
+        }
+      }
     )
     const contents = await response.json()
     return contents;
