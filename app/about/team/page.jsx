@@ -1,15 +1,14 @@
-export const metadata ={
-  title: 'About team'
-}
-
 const TeamPage = () => {
   return (
     <div>
-      <h1>Team Page</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda blanditiis, doloremque quibusdam pariatur nulla similique iste maiores voluptate quaerat vel 
-        quia exercitationem explicabo! Non modi quisquam vitae in voluptatem?</p>
+      <h1>Our Team</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur
+        ducimus laboriosam eaque recusandae tempora enim aut, quae error eum
+        ipsum reiciendis temporibus dolore delectus ullam impedit cumque id.
+        Itaque?
+      </p>
     </div>
-  )
-}
-
-export default TeamPage
+  );
+};
+export default TeamPage;

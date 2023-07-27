@@ -1,34 +1,35 @@
 'use client';
-import { useState, useEffect } from "react";
-import Link from "next/link"
-import LoadingPage from "./loading";
-import Courses from "./components/Courses"
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import LoadingPage from './loading';
+import Courses from './componets/Courses';
+import CourseSearch from './componets/CourseSearch';
 
 const HomePage = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() =>{
+  useEffect(() => {
     const fetchCourses = async () => {
-      const res = await fetch ('/api/courses')
+      const res = await fetch('/api/courses');
       const data = await res.json();
-      setCourses(data)
-      setLoading(false)
-    }
+      setCourses(data);
+      setLoading(false);
+    };
 
-    fetchCourses()
-  }, [])
+    fetchCourses();
+  }, []);
 
-  if(loading){
-    return <LoadingPage/>
+  if (loading) {
+    return <LoadingPage />;
   }
+
   return (
     <>
-      <h1>Welcome to the HomePage.</h1>
-      <Courses courses={courses}/> 
-      
+      <h1>Welcome To aKuma</h1>
+      <CourseSearch getSearchResults={(results) => setCourses(results)} />
+      <Courses courses={courses} />
     </>
-  )
-}
-
-export default HomePage
+  );
+};
+export default HomePage;

@@ -1,15 +1,20 @@
 export const metadata = {
-  title: 'Next.js lesson'
-}
+  title: 'About aKuma',
+};
 
 const AboutPage = () => {
   return (
     <div>
-     <h1>About Us.</h1>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur esse magnam iure ad quis natus repudiandae quae libero?
-         Eum ratione debitis reprehenderit culpa laudantium quod at reiciendis rem nemo.</p>
+      <h1>About aKuma</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+        molestiae ipsam, et aut consequatur ipsum voluptates quasi, quos
+        recusandae doloribus provident consequuntur amet nobis est voluptate
+        perferendis quaerat distinctio saepe dolores perspiciatis ex ab nostrum
+        eaque! Porro perspiciatis possimus, sed a quidem sunt sit doloremque
+        molestiae maiores blanditiis quasi quod.
+      </p>
     </div>
-  )
-}
-
-export default AboutPage
+  );
+};
+export default AboutPage;
